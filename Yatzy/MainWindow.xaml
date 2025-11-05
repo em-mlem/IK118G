@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Yatzy"
         mc:Ignorable="d"
-        Title="Yatzy" Height="450" Width="800">
+        Title="Yatzy" Height="465" Width="800">
     <Grid>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="102" Margin="10,-8,0,0" TextWrapping="Wrap" Text="Yatzy!" VerticalAlignment="Top" Width="216" FontSize="72" FontWeight="Bold"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="51" Margin="240,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="1or"/></TextBlock>
