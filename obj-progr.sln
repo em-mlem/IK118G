@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatzy", "Yatzy\Yatzy.csproj", "{C7C51003-E658-4295-812E-4CE3FE24DCA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL2", "FL2\FL2.csproj", "{AF79001E-E46F-153F-CF8A-57AB539994AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColourSwapper", "ColourSwapper\ColourSwapper.csproj", "{850119E9-C4C9-55BB-E340-2E65EEB84572}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7C51003-E658-4295-812E-4CE3FE24DCA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C51003-E658-4295-812E-4CE3FE24DCA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C51003-E658-4295-812E-4CE3FE24DCA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C51003-E658-4295-812E-4CE3FE24DCA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF79001E-E46F-153F-CF8A-57AB539994AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF79001E-E46F-153F-CF8A-57AB539994AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF79001E-E46F-153F-CF8A-57AB539994AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF79001E-E46F-153F-CF8A-57AB539994AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{850119E9-C4C9-55BB-E340-2E65EEB84572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{850119E9-C4C9-55BB-E340-2E65EEB84572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{850119E9-C4C9-55BB-E340-2E65EEB84572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{850119E9-C4C9-55BB-E340-2E65EEB84572}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E71F74F-1517-41D6-BD18-D52E1A902BE2}
+	EndGlobalSection
+EndGlobal
