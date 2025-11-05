@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL2", "FL2\FL2.csproj", "{A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColourSwapper", "ColourSwapper\ColourSwapper.csproj", "{850119E9-C4C9-55BB-E340-2E65EEB84572}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatzy2", "Yatzy2\Yatzy2.csproj", "{30F6FA15-65B1-4B92-B9D1-286078C208FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{850119E9-C4C9-55BB-E340-2E65EEB84572}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{850119E9-C4C9-55BB-E340-2E65EEB84572}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{850119E9-C4C9-55BB-E340-2E65EEB84572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F6FA15-65B1-4B92-B9D1-286078C208FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F6FA15-65B1-4B92-B9D1-286078C208FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F6FA15-65B1-4B92-B9D1-286078C208FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F6FA15-65B1-4B92-B9D1-286078C208FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

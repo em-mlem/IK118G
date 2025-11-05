@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Yatzy"
         mc:Ignorable="d"
-        Title="Yatzy" Height="465" Width="800">
+        Title="MainWindow" Height="1052" Width="800">
     <Grid>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="102" Margin="10,-8,0,0" TextWrapping="Wrap" Text="Yatzy!" VerticalAlignment="Top" Width="216" FontSize="72" FontWeight="Bold"/>
-        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="51" Margin="240,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="1or"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="51" Margin="133,425,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="Ett par"/></TextBlock>
         <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Height="50" Margin="240,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="2or"/></TextBlock>
         <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Height="51" Margin="240,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="3or"/></TextBlock>
         <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Height="50" Margin="240,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="4"/><Run Text="or"/></TextBlock>
@@ -22,7 +22,7 @@
         <TextBox x:Name="textBoxFour" HorizontalAlignment="Left" Height="42" Margin="277,189,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
         <TextBox x:Name="textBoxFive" HorizontalAlignment="Left" Height="42" Margin="277,240,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
         <TextBox x:Name="textBoxSix" HorizontalAlignment="Left" Height="42" Margin="277,289,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
-        <Button x:Name="btnResultat" Content="Räkna ihop&#xD;&#xA;resultat" HorizontalAlignment="Left" Margin="617,332,0,0" VerticalAlignment="Top" Height="74" Width="136" FontSize="18" FontWeight="Bold" Click="btnResultat_Click"/>
+        <Button x:Name="btnResultat" Content="Räkna ihop&#xD;&#xA;resultat" HorizontalAlignment="Left" Margin="642,327,0,0" VerticalAlignment="Top" Height="74" Width="136" FontSize="18" FontWeight="Bold" Click="btnResultat_Click"/>
         <Label x:Name="lblSum" Content="Summa" HorizontalAlignment="Left" Margin="272,343,0,0" VerticalAlignment="Top" Height="45" Width="80" FontSize="18" FontWeight="Bold"/>
         <Label x:Name="lblBns" Content="Bonus" HorizontalAlignment="Left" Margin="272,383,0,0" VerticalAlignment="Top" Height="45" Width="80" FontSize="18" FontWeight="Bold"/>
         <TextBox x:Name="textBoxOneP2" HorizontalAlignment="Center" Height="42" Margin="0,39,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14" />
@@ -58,5 +58,57 @@
         <TextBox x:Name="textBoxP3" HorizontalAlignment="Left" Height="27" Margin="38,192,0,0" TextWrapping="Wrap" Text="Skriv namnet på Player 3" VerticalAlignment="Top" Width="129" FontSize="11"/>
         <TextBox x:Name="textBoxP4" HorizontalAlignment="Left" Height="27" Margin="38,224,0,0" TextWrapping="Wrap" Text="Skriv namnet på Player 4" VerticalAlignment="Top" Width="129" FontSize="11"/>
         <Button x:Name="btnPlayer" Content="Spara spelare" HorizontalAlignment="Left" Margin="92,256,0,0" VerticalAlignment="Top" Click="btnPlayer_Click"/>
+        <TextBlock x:Name="textBlock_Copy8" HorizontalAlignment="Left" Height="51" Margin="129,476,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" FontSize="36" FontWeight="Bold"><Run Text="Två"/><Run Language="en-gb" Text=" "/><Run Text="par"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy9" HorizontalAlignment="Left" Height="51" Margin="133,527,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="Tretal"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy10" HorizontalAlignment="Left" Height="51" Margin="133,578,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="Fyrtal"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy11" HorizontalAlignment="Left" Height="51" Margin="178,629,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="Kåk"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy12" HorizontalAlignment="Left" Height="51" Margin="68,680,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="Liten stege"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy13" HorizontalAlignment="Left" Height="51" Margin="81,731,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="Stor"/><Run Text=" stege"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy14" HorizontalAlignment="Left" Height="51" Margin="144,787,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="Chans"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy15" HorizontalAlignment="Left" Height="51" Margin="155,838,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" FontSize="36" FontWeight="Bold"><Run Language="en-gb" Text="Yatzy"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy16" HorizontalAlignment="Left" Height="72" Margin="68,906,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontSize="48" FontWeight="Bold" RenderTransformOrigin="0.49,1.331"><Run Language="en-gb" Text="Summa"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy17" HorizontalAlignment="Left" Height="50" Margin="240,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" FontSize="36" FontWeight="Bold" RenderTransformOrigin="0.396,-0.338"><Run Language="en-gb" Text="1"/><Run Text="or"/></TextBlock>
+        <Rectangle HorizontalAlignment="Center" Height="2" Margin="0,425,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" Fill="Black"/>
+        <TextBox x:Name="textBoxPair" HorizontalAlignment="Left" Height="42" Margin="277,439,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxTwoPairs" HorizontalAlignment="Left" Height="42" Margin="277,488,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxThrees" HorizontalAlignment="Left" Height="42" Margin="277,539,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxFours" HorizontalAlignment="Left" Height="42" Margin="277,589,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxHouse" HorizontalAlignment="Left" Height="42" Margin="277,640,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxSmallLadder" HorizontalAlignment="Left" Height="42" Margin="277,689,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxLargeLadder" HorizontalAlignment="Left" Height="42" Margin="277,742,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxChance" HorizontalAlignment="Left" Height="42" Margin="277,794,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxYatzy" HorizontalAlignment="Left" Height="42" Margin="277,842,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxPairP2" HorizontalAlignment="Center" Height="42" Margin="0,440,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxTwoPairsP2" HorizontalAlignment="Center" Height="42" Margin="0,488,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxThreesP2" HorizontalAlignment="Center" Height="42" Margin="0,540,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxFoursP2" HorizontalAlignment="Center" Height="42" Margin="0,590,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxHouseP2" HorizontalAlignment="Center" Height="42" Margin="0,640,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxSmallLadderP2" HorizontalAlignment="Center" Height="42" Margin="0,690,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxLargeLadderP2" HorizontalAlignment="Center" Height="42" Margin="0,742,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxChanceP2" HorizontalAlignment="Center" Height="42" Margin="0,794,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxYatzyP2" HorizontalAlignment="Center" Height="42" Margin="0,842,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxPairP3" HorizontalAlignment="Left" Height="42" Margin="456,440,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxTwoPairsP3" HorizontalAlignment="Left" Height="42" Margin="456,488,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxThreesP3" HorizontalAlignment="Left" Height="42" Margin="456,540,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxFoursP3" HorizontalAlignment="Left" Height="42" Margin="456,590,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxHouseP3" HorizontalAlignment="Left" Height="42" Margin="456,640,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxSmallLadderP3" HorizontalAlignment="Left" Height="42" Margin="456,690,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxLargeLadderP3" HorizontalAlignment="Left" Height="42" Margin="456,742,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxChanceP3" HorizontalAlignment="Left" Height="42" Margin="456,794,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxYatzyP3" HorizontalAlignment="Left" Height="42" Margin="456,842,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxPairP4" HorizontalAlignment="Left" Height="42" Margin="547,439,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxTwoPairsP4" HorizontalAlignment="Left" Height="42" Margin="547,488,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxThreesP4" HorizontalAlignment="Left" Height="42" Margin="547,539,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxFoursP4" HorizontalAlignment="Left" Height="42" Margin="547,589,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxHouseP4" HorizontalAlignment="Left" Height="42" Margin="547,640,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxSmallLadderP4" HorizontalAlignment="Left" Height="42" Margin="547,689,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxLargeLadderP4" HorizontalAlignment="Left" Height="42" Margin="547,742,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxChanceP4" HorizontalAlignment="Left" Height="42" Margin="547,794,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="textBoxYatzyP4" HorizontalAlignment="Left" Height="42" Margin="547,842,0,0" TextWrapping="Wrap" Text="Fyll i resultat" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <Label x:Name="lblEndSum" Content="Summa" HorizontalAlignment="Left" Margin="267,920,0,0" VerticalAlignment="Top" Height="44" Width="80" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="lblEndSumP2" Content="Summa" HorizontalAlignment="Left" Margin="355,920,0,0" VerticalAlignment="Top" Height="44" Width="80" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="lblEndSumP3" Content="Summa" HorizontalAlignment="Left" Margin="446,920,0,0" VerticalAlignment="Top" Height="44" Width="80" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="lblEndSumP4" Content="Summa" HorizontalAlignment="Left" Margin="537,920,0,0" VerticalAlignment="Top" Height="44" Width="80" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btnEndResult" Content="Räkna ihop slutresultat" HorizontalAlignment="Left" Margin="537,964,0,0" VerticalAlignment="Top" Height="42" Width="252" FontSize="18" FontWeight="Bold" Click="btnEndResult_Click"/>
     </Grid>
 </Window>
