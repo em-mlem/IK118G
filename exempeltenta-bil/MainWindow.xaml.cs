@@ -33,6 +33,23 @@ namespace exempeltenta_bil
 
             return true;
         }
+
+        private int currentNumber = 0;
+        private Random r = new();
+
+        private static string GetRandomLetters()
+        {
+            Random r = new Random();
+            string okLetters = "ABCDEFGHJKLMNPRSTUWXYX";
+            string letters = "";
+            for (int i = 0; i < 3; i++)
+            {
+                int index = r.Next(okLetters.Length);
+                letters += okLetters[index].ToString();
+            }
+            return letters;
+        }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -65,6 +82,30 @@ namespace exempeltenta_bil
                 MessageBox.Show("Skylten har ett felaktigt antal tecken");
             }
             //Uppgift 2 klar
+        }
+
+        private void platespotting_Click(object sender, RoutedEventArgs e)
+        {
+            string letters = GetRandomLetters();
+
+            int number = r.Next(1, 1000);
+
+            string plateNr = $"{letters} {number:000}";
+
+            labelPlatespot.Content = plateNr;
+
+            if (number == currentNumber+1)
+            {
+                currentNumber = number;
+
+                labelPlatespotHistory.Content = regNr;
+
+                if (currentNumber == 999)
+                {
+                    MessageBox.Show("Grattis! Du har nått 999!");
+                }
+            }
+            //Uppgift 3 klar
         }
     }
 }
