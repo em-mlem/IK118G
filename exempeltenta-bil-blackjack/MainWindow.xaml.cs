@@ -34,6 +34,7 @@ namespace exempeltenta_bil_blackjack
 
         private CarRegister register = new();
 
+
         public MainWindow()
         {
             InitializeComponent();
