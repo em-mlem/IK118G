@@ -12,7 +12,13 @@ namespace exempeltenta_bil_blackjack
 
         public CarRegister()
         {
-            Cars = new();
+            Cars = new List<Car>();
+        }
+
+        public bool AddCar(Car c)
+        {
+            Cars.Add(c);
+            return true;
         }
     }
 }

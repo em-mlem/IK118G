@@ -40,6 +40,16 @@
         </StackPanel>
             <Button x:Name="btnbet" Content="Satsa" Click="btnbet_Click"/>
             <Button x:Name="btnclear" Content="Rensa"/>
+            <Label x:Name="lblMake" Content="Märke" Width="43"/>
+            <TextBox x:Name="txtMake" TextWrapping="Wrap" Text="" Width="120"/>
+            <Label x:Name="lblModel" Content="Modell" Width="43"/>
+            <TextBox x:Name="txtModel" TextWrapping="Wrap" Text="" Width="120"/>
+            <Label x:Name="lblRegNr" Content="Registreringsnummer" Width="125"/>
+            <TextBox x:Name="txtRegNr" TextWrapping="Wrap" Text="" Width="120"/>
+            <Label x:Name="lblColour" Content="Färg" Width="34"/>
+            <TextBox x:Name="txtColour" TextWrapping="Wrap" Text="" Width="120"/>
+            <Button x:Name="btnregister" Content="Registrera" Click="btnregister_Click"/>
+            <Label x:Name="lblStatus" Content="" Width="408"/>
         </StackPanel>
     </Grid>
 </Window>

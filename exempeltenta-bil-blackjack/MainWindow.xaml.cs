@@ -32,6 +32,8 @@ namespace exempeltenta_bil_blackjack
         private int total2 = 0;
         private int total3 = 0;
 
+        private CarRegister register = new();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -71,6 +73,29 @@ namespace exempeltenta_bil_blackjack
             //Uppgift 6 klar
             //Uppgift 7 klar
             
+        }
+
+        private void btnregister_Click(object sender, RoutedEventArgs e)
+        {
+            Car newCar = new Car()
+            {
+                Make = txtMake.Text,
+                Model = txtModel.Text,
+                LicencePlate = txtRegNr.Text,
+                Colour = txtColour.Text,
+            };
+
+            bool added = register.AddCar(newCar);
+
+            if (added)
+            { 
+                lblStatus.Content = "Bilen registrerades!";
+            }
+            else
+            {
+                lblStatus.Content = "Kunde inte registrera bilen.";
+            }
+            //Uppgift 9 klar
         }
     }
 }
