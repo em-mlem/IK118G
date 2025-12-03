@@ -31,6 +31,7 @@ namespace exempeltenta_bil_blackjack
         private int total1 = 0;
         private int total2 = 0;
         private int total3 = 0;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -49,14 +50,27 @@ namespace exempeltenta_bil_blackjack
             int result2 = int.Parse(lblCode2.Content.ToString());
             int result3 = int.Parse(lblCode3.Content.ToString());
 
-            total1 += result1;
-            total2 += result2;
-            total3 += result3;
+            if (chk1.IsChecked != true)
+            {
+                total1 += result1;
+            }
+
+            if (chk2.IsChecked != true)
+            {
+                total2 += result2;
+            }
+
+            if (chk3.IsChecked != true)
+            {
+                total3 += result3;
+            }
 
             lblTotal1.Content = total1;
             lblTotal2.Content = total2;
             lblTotal3.Content = total3;
             //Uppgift 6 klar
+            //Uppgift 7 klar
+            
         }
     }
 }
