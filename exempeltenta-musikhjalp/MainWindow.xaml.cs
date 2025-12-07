@@ -16,6 +16,12 @@ namespace exempeltenta_musikhjalp
     /// </summary>
     public partial class MainWindow : Window
     {
+        // Räknare för totalt antal önskningar
+        private int antalOnskningar = 0;
+
+        // Kostnad per låt (konstant)
+        private const int PrisPer = 50;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -55,13 +61,26 @@ namespace exempeltenta_musikhjalp
             // 3. Kontrollera att återstående del är ett heltal
             if (!int.TryParse(heltalsText, out int resultat))
             {
-                MessageBox.Show("Du måste skriva ett tal, exempel: 12 eller 12.5", "Fel",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Du måste skriva ett tal, exempel: 12 eller 12.5");
                 return;
             }
+            
+            antalOnskningar++;
 
             // 4. Visa originalet och det "rensade" värdet
             MessageBox.Show($"Du röstade på låt nummer: {resultat}");
+        }
+
+        private void btnVisaSaldo_Click(object sender, RoutedEventArgs e)
+        {
+            // Beräkna totala summan
+            int totaltBelopp = antalOnskningar * PrisPer;
+
+            // Presentera antal låtar och totalsumma
+            MessageBox.Show(
+                $"Du har totalt önskat {antalOnskningar} låt(ar).\n" +
+                $"Detta motsvarar {totaltBelopp} kronor " +
+                $"som går till Musikhjälpen.");
         }
     }
 }

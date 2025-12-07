@@ -23,11 +23,20 @@
                  HorizontalAlignment="Left"
                  Margin="0,0,0,10"/>
 
-        <Button x:Name="btnOnska"
-                Grid.Row="2"
-                Content="Önska"
-                Width="80"
-                HorizontalAlignment="Left"
-                Click="btnOnska_Click"/>
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    Margin="0,0,0,10">
+            <Button x:Name="btnOnska"
+                    Content="Önska"
+                    Width="80"
+                    Margin="0,0,10,0"
+                    Click="btnOnska_Click"/>
+
+            <Button x:Name="btnVisaSaldo"
+                    Content="Visa saldo"
+                    Width="100"
+                    Click="btnVisaSaldo_Click"/>
+        </StackPanel>
     </Grid>
 </Window>
