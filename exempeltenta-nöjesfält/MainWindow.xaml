@@ -9,6 +9,8 @@
     <Grid>
         <TextBox x:Name="txtpeople" HorizontalAlignment="Left" Margin="44,39,0,0" TextWrapping="Wrap" Text="Antal personer" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnbalance" Content="Balanstest" HorizontalAlignment="Left" Margin="44,62,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="btnqueue" Content="Kö" HorizontalAlignment="Left" Margin="44,87,0,0" VerticalAlignment="Top" Click="btnqueue_Click"/>
+        <Button x:Name="btnwait" Content="Väntetid" HorizontalAlignment="Left" Margin="44,112,0,0" VerticalAlignment="Top" Click="btnwait_Click"/>
 
     </Grid>
 </Window>
