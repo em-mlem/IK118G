@@ -56,6 +56,20 @@ namespace exempeltenta_squidgame
             }
             return sum;
         }
+        public List<int> DivideGuardsByRank(int totalGuards)
+        {
+            int circles = (int)Math.Round(totalGuards * 0.60);
+            int triangles = (int)Math.Round(totalGuards * 0.30);
+            int squares = (int)Math.Round(totalGuards * 0.10);
+            int sum = circles + triangles + squares;
+
+            if (sum!= totalGuards)
+            {
+                int diff = totalGuards - sum;
+                circles += diff;
+            }
+            return new List<int> { circles, triangles, squares };
+        }
         public MainWindow()
         {
             InitializeComponent();
@@ -87,6 +101,21 @@ namespace exempeltenta_squidgame
             int totalDigitSum = TotalDigitSum(magicNumbers);
             MessageBox.Show("Magiska nummer: " + string.Join(", ", magicNumbers));
             MessageBox.Show($"Summan av alla siffror i listan är: {totalDigitSum}");
+        }
+
+        private void btnguards_Click(object sender, RoutedEventArgs e)
+        {
+            string input = txtNumbers.Text;
+            int totalGuards;
+
+            if (!int.TryParse(input, out totalGuards) || totalGuards < 1)
+            {
+                MessageBox.Show("Var vänlig ange ett giltigt heltal för antal vakter.");
+                return;
+            }
+            List<int> result = DivideGuardsByRank(totalGuards);
+            MessageBox.Show(
+                 $"Cirklar (O): {result[0]}\n" + $"Trianglar (△): {result[1]}\n" + $"Fyrkanter (□): {result[2]}");
         }
     }
 }
