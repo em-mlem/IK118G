@@ -8,11 +8,13 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace exempeltenta_squidgame
 {
     public partial class MainWindow : Window
     {
+        private Game _game;
         public List<int> Numbers { get; set; }
         public bool IsUnique (List<int> list, int number)
         {
@@ -76,6 +78,7 @@ namespace exempeltenta_squidgame
         {
             InitializeComponent();
             Numbers = new List<int>();
+            _game = new Game();
         }
 
         private void btnchknumbers_Click(object sender, RoutedEventArgs e)
@@ -183,6 +186,17 @@ namespace exempeltenta_squidgame
             }
             MessageBox.Show($"Lag A: {string.Join(", ", teamA)} (summa: {sumA})\n" + $"Lag B: {string.Join(", ", teamB)} (summa: {sumB})\n\n" + winnerText);
 
+        }
+        private void btnbridge_Click(object sender, RoutedEventArgs e)
+        {
+            bool result1 = _game.GlassBridge("RLLRLLRRLR");
+            bool result2 = _game.GlassBridge("RRLRLLRRLR");
+
+            // Du har nu två olika variabler med svaren
+            string text1 = result1 ? "klarade bron" : "föll";
+            string text2 = result2 ? "klarade bron" : "föll";
+
+            MessageBox.Show($"RLLRLLRRLR → spelaren {text1}\n" + $"RRLRLLRRLR → spelaren {text2}","Glasbron");
         }
     }
 }
