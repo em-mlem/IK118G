@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exempeltenta-starwars-battl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exempeltenta-squidgame", "exempeltenta-squidgame\exempeltenta-squidgame.csproj", "{7653F57E-B96F-5A70-0A77-667A3D9D8791}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exempeltenta-nöjesfält", "exempeltenta-nöjesfält\exempeltenta-nöjesfält.csproj", "{B0598A61-5A34-44DE-87F5-3E5B6BC87FB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{7653F57E-B96F-5A70-0A77-667A3D9D8791}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7653F57E-B96F-5A70-0A77-667A3D9D8791}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7653F57E-B96F-5A70-0A77-667A3D9D8791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0598A61-5A34-44DE-87F5-3E5B6BC87FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0598A61-5A34-44DE-87F5-3E5B6BC87FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0598A61-5A34-44DE-87F5-3E5B6BC87FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0598A61-5A34-44DE-87F5-3E5B6BC87FB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
