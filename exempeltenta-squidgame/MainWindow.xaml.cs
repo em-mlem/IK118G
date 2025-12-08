@@ -37,6 +37,25 @@ namespace exempeltenta_squidgame
             }
             return result;
         }
+        public int TotalDigitSum(List<int> numbers)
+        {
+            int total = 0;
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                total += SumDigits(numbers[i]);
+            }
+            return total;
+        }
+        static int SumDigits (int number)
+        {
+            int sum = 0;
+            while (number > 0)
+            {
+                sum += number % 10;
+                number /= 10;
+            }
+            return sum;
+        }
         public MainWindow()
         {
             InitializeComponent();
@@ -65,7 +84,9 @@ namespace exempeltenta_squidgame
         private void btnmagicnumber_Click(object sender, RoutedEventArgs e)
         {
             List<int> magicNumbers = FindCommonMultiples();
+            int totalDigitSum = TotalDigitSum(magicNumbers);
             MessageBox.Show("Magiska nummer: " + string.Join(", ", magicNumbers));
+            MessageBox.Show($"Summan av alla siffror i listan är: {totalDigitSum}");
         }
     }
 }
