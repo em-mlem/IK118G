@@ -13,8 +13,22 @@ namespace exempeltenta_starwars_battlefield
 
         public Battlefield(Ship ship)
         {
-            StarDestroyer = ship;
+            //lista
             RebelShips = new List<Ship>();
+            //skapa stardestroyer med rätt egenskaper
+            StarDestroyer = new Ship("Star Destroyer", 10000, 15);
+
+            //loop for 260 rebelships
+            for (int i =0; i<260;i++)
+            {
+                //Döp skepp till indexnr +1 per loop
+                string name = $"X-Wing #{i + 1}";
+                //skapa RebelShip med rätt egenskaper
+                Ship RebelShip = new Ship(name, 1, 4);
+                //lägg till i lista
+                RebelShips.Add(RebelShip);
+            }
+            
         }
     }
 }
