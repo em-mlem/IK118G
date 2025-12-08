@@ -30,5 +30,37 @@ namespace exempeltenta_starwars_battlefield
             }
             
         }
+        public void RebelAttack()
+        {
+            //sätt startvärde
+            int totalDamage = 0;
+            //loopa attack
+            foreach (Ship RebelShip in RebelShips)
+            {
+                int attack = RebelShip.Attack();
+                totalDamage += attack;
+            }
+            //minska energi
+            StarDestroyer.Energy -= totalDamage;
+            //ingen negativ energi
+            if (StarDestroyer.Energy < 0)
+            { 
+                StarDestroyer.Energy = 0;
+            }
+        }
+        public void ImperialStrike()
+        {
+            int numberOfHits = StarDestroyer.Attack();
+            if (numberOfHits == 0)
+            {
+                return;
+            }
+            if (numberOfHits > RebelShips.Count)
+            {
+                numberOfHits = RebelShips.Count;
+            }
+            RebelShips.RemoveRange(0, numberOfHits);
+        }
     }
+
 }
