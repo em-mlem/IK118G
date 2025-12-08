@@ -180,8 +180,6 @@ namespace exempeltenta_squidgame
                         winnerText = "Det var helt jämnt – slumpen avgjorde: Lag B vann!";
                     }
                 }
-
-
             }
             MessageBox.Show($"Lag A: {string.Join(", ", teamA)} (summa: {sumA})\n" + $"Lag B: {string.Join(", ", teamB)} (summa: {sumB})\n\n" + winnerText);
 
