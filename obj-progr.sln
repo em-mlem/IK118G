@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exempeltenta-starwars", "ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exempeltenta-starwars-uppg2", "exempeltenta-starwars-uppg2\exempeltenta-starwars-uppg2.csproj", "{B497EABB-35F8-46D2-B9A3-9B193AF24F2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exempeltenta-starwars-battlefield", "exempeltenta-starwars-battlefield\exempeltenta-starwars-battlefield.csproj", "{9EDAF585-A7F2-47DF-8924-827BE0255E0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{B497EABB-35F8-46D2-B9A3-9B193AF24F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B497EABB-35F8-46D2-B9A3-9B193AF24F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B497EABB-35F8-46D2-B9A3-9B193AF24F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EDAF585-A7F2-47DF-8924-827BE0255E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EDAF585-A7F2-47DF-8924-827BE0255E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EDAF585-A7F2-47DF-8924-827BE0255E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EDAF585-A7F2-47DF-8924-827BE0255E0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
