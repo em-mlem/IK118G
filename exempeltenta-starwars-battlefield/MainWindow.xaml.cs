@@ -20,5 +20,11 @@ namespace exempeltenta_starwars_battlefield
         {
             InitializeComponent();
         }
+
+        private void btnstart_Click(object sender, RoutedEventArgs e)
+        {
+            Battlefield field = new Battlefield();
+            field.StartBattle();
+        }
     }
 }

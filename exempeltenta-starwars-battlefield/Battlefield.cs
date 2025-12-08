@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace exempeltenta_starwars_battlefield
 {
@@ -11,7 +12,7 @@ namespace exempeltenta_starwars_battlefield
         public Ship StarDestroyer { get; set; }
         public List<Ship> RebelShips { get; set; }
 
-        public Battlefield(Ship ship)
+        public Battlefield()
         {
             //lista
             RebelShips = new List<Ship>();
@@ -60,6 +61,24 @@ namespace exempeltenta_starwars_battlefield
                 numberOfHits = RebelShips.Count;
             }
             RebelShips.RemoveRange(0, numberOfHits);
+        }
+        public void StartBattle()
+        {
+            do
+            {
+                RebelAttack();
+                if (StarDestroyer.Energy <= 0)
+                {
+                    MessageBox.Show("Rebellerna vann!");
+                    break;
+                }
+                ImperialStrike();
+                if (RebelShips.Count == 0)
+                {
+                    MessageBox.Show("Imperiet vann!");
+                    break;
+                }
+            } while (true);
         }
     }
 
