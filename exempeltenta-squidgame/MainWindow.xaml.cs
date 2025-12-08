@@ -70,6 +70,8 @@ namespace exempeltenta_squidgame
             }
             return new List<int> { circles, triangles, squares };
         }
+        public Random _random = new Random();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -116,6 +118,73 @@ namespace exempeltenta_squidgame
             List<int> result = DivideGuardsByRank(totalGuards);
             MessageBox.Show(
                  $"Cirklar (O): {result[0]}\n" + $"Trianglar (△): {result[1]}\n" + $"Fyrkanter (□): {result[2]}");
+        }
+        private void btntugofwar_Click(object sender, RoutedEventArgs e)
+        {
+            int[] teamA = new int[5];
+            int[] teamB = new int[5];
+
+            int sumA = 0;
+            int sumB = 0;
+
+            for (int i = 0; i< 5; i++)
+            {
+                teamA[i] = _random.Next(1, 11);
+                teamB[i] = _random.Next(1, 11);
+
+                sumA += teamA[i];
+                sumB += teamB[i];
+            }
+            string winnerText;
+            if (sumA > sumB)
+            {
+                winnerText = "Lag A vann!";
+            }
+            else if (sumB > sumA)
+            {
+                winnerText = "Lag B vann!";
+            }
+            else
+            {
+                int winsA = 0;
+                int winsB = 0;
+
+                for (int i = 0; i < 5; i++)
+                {
+                    if (teamA[i] > teamB[i])
+                    {
+                        winsA++;
+                    }
+                    else if (teamB[i] > teamA[i])
+                    {
+                        winsB++;
+                    }
+                }
+                if (winsA > winsB)
+                {
+                    winnerText = "Lag A vann på flest individuella segrar!";
+                }
+                else if (winsB > winsA)
+                {
+                    winnerText = "Lag B vann på flest individuella segrar!";
+                }
+                else
+                {
+                    int randomWinner = _random.Next(0, 2);
+                    if (randomWinner == 0)
+                    {
+                        winnerText = "Det var helt jämnt – slumpen avgjorde: Lag A vann!";
+                    }
+                    else
+                    {
+                        winnerText = "Det var helt jämnt – slumpen avgjorde: Lag B vann!";
+                    }
+                }
+
+
+            }
+            MessageBox.Show($"Lag A: {string.Join(", ", teamA)} (summa: {sumA})\n" + $"Lag B: {string.Join(", ", teamB)} (summa: {sumB})\n\n" + winnerText);
+
         }
     }
 }

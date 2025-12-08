@@ -11,6 +11,7 @@
         <Button x:Name="btnchknumbers" Content="Nummertest" HorizontalAlignment="Left" Margin="18,53,0,0" VerticalAlignment="Top" Click="btnchknumbers_Click"/>
         <Button x:Name="btnmagicnumber" Content="Magic Number!" HorizontalAlignment="Left" Margin="18,78,0,0" VerticalAlignment="Top" Click="btnmagicnumber_Click"/>
         <Button x:Name="btnguards" Content="Vakter" HorizontalAlignment="Left" Margin="18,103,0,0" VerticalAlignment="Top" Click="btnguards_Click"/>
+        <Button x:Name="btntugofwar" Content="Dragkamp!" HorizontalAlignment="Left" Margin="18,128,0,0" VerticalAlignment="Top" Click="btntugofwar_Click"/>
 
     </Grid>
 </Window>
