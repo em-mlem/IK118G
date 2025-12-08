@@ -1,0 +1,71 @@
+﻿using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace exempeltenta_squidgame
+{
+    public partial class MainWindow : Window
+    {
+        public List<int> Numbers { get; set; }
+        public bool IsUnique (List<int> list, int number)
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i] == number)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public List<int> FindCommonMultiples()
+        {
+            List<int> result = new();
+            for (int i = 0; i <= 456; i++)
+            {
+                if (i % 4 == 0 && i % 5 == 0 && i % 6 == 0)
+                { 
+                    result.Add(i);
+                }
+            }
+            return result;
+        }
+        public MainWindow()
+        {
+            InitializeComponent();
+            Numbers = new List<int>();
+        }
+
+        private void btnchknumbers_Click(object sender, RoutedEventArgs e)
+        {
+            string numtxt = txtNumbers.Text;
+            int num = int.Parse(numtxt);
+            if (num < 1 || num > 456)
+            {
+                MessageBox.Show("Numret måste vara mellan 1 och 456, försök igen.");
+                return;
+            }
+            if (!IsUnique(Numbers, num))
+            {
+                MessageBox.Show($"{num} är redan upptaget, välj ett nytt nummer.");
+                return;
+            }
+            MessageBox.Show("Numret har lagts till. Tack!");
+            Numbers.Add(num);
+                
+        }
+
+        private void btnmagicnumber_Click(object sender, RoutedEventArgs e)
+        {
+            List<int> magicNumbers = FindCommonMultiples();
+            MessageBox.Show("Magiska nummer: " + string.Join(", ", magicNumbers));
+        }
+    }
+}

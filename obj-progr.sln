@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exempeltenta-starwars-uppg2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exempeltenta-starwars-battlefield", "exempeltenta-starwars-battlefield\exempeltenta-starwars-battlefield.csproj", "{9EDAF585-A7F2-47DF-8924-827BE0255E0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exempeltenta-squidgame", "exempeltenta-squidgame\exempeltenta-squidgame.csproj", "{7653F57E-B96F-5A70-0A77-667A3D9D8791}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{9EDAF585-A7F2-47DF-8924-827BE0255E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EDAF585-A7F2-47DF-8924-827BE0255E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EDAF585-A7F2-47DF-8924-827BE0255E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7653F57E-B96F-5A70-0A77-667A3D9D8791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7653F57E-B96F-5A70-0A77-667A3D9D8791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7653F57E-B96F-5A70-0A77-667A3D9D8791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7653F57E-B96F-5A70-0A77-667A3D9D8791}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
